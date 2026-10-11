@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly rainfall minus the same station/calendar-month mean for 1991\u20132020. Baseline uses QC-complete observations with at least 20 years available per month. Missing months are grey.",
+  "usermeta": {
+    "comments": {
+      "data": "Loads a separate JSON file from beside the webpage.",
+      "params": "Dropdown chooses a city; station name remains visible.",
+      "transform": "Filter before drawing to keep only 684 cells.",
+      "colour": "Fixed symmetric scale: brown below baseline, teal above. Extreme values saturate at +/-300 mm; tooltip retains exact values.",
+      "baseline": "Subtract the 1991\u20132020 average for the same calendar month, not the overall annual average."
+    }
+  },
+  "title": {
+    "text": "When was rainfall above or below usual?",
+    "subtitle": {
+      "expr": "city + ' | Monthly difference from 1991\u20132020 average (mm)'"
+    },
+    "anchor": "start"
+  },
+  "width": 650,
+  "height": 650,
+  "data": {
+    "url": "monthly-rainfall.json"
+  },
+  "params": [
+    {
+      "name": "city",
+      "value": "Sydney",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Adelaide",
+          "Brisbane",
+          "Canberra",
+          "Darwin",
+          "Hobart",
+          "Melbourne",
+          "Perth",
+          "Sydney"
+        ],
+        "name": "City: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.city === city"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 0.3
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": "ascending",
+      "title": null,
+      "axis": {
+        "labelExpr": "datum.value % 5 === 0 || datum.value === 2026 ? datum.label : ''",
+        "ticks": false
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "isValid(datum.anomaly)",
+        "field": "anomaly",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            -300,
+            0,
+            300
+          ],
+          "range": [
+            "#8c510a",
+            "#f5f5f5",
+            "#01665e"
+          ],
+          "clamp": true
+        },
+        "legend": {
+          "title": "Difference (mm); extremes capped at \u00b1300",
+          "orient": "bottom",
+          "gradientLength": 400,
+          "titleLimit": 600
+        }
+      },
+      "value": "#d0d0d0"
+    },
+    "tooltip": [
+      {
+        "field": "city",
+        "title": "City"
+      },
+      {
+        "field": "station",
+        "title": "Station"
+      },
+      {
+        "field": "station_id",
+        "title": "Station ID"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "month",
+        "title": "Month"
+      },
+      {
+        "field": "rainfall",
+        "title": "Monthly rainfall (mm)",
+        "type": "quantitative",
+        "format": ".1f"
+      },
+      {
+        "field": "baseline",
+        "title": "Reference average (mm)",
+        "type": "quantitative",
+        "format": ".1f"
+      },
+      {
+        "field": "baseline_n",
+        "title": "Reference years available"
+      },
+      {
+        "field": "anomaly",
+        "title": "Difference (mm)",
+        "type": "quantitative",
+        "format": ".1f"
+      },
+      {
+        "field": "quality",
+        "title": "Quality control"
+      },
+      {
+        "field": "status",
+        "title": "Availability"
+      }
+    ]
+  },
+  "config": {
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "background": "#faf9f4"
+  }
+}
