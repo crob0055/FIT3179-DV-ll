@@ -34,6 +34,16 @@
     <p>The original grids are averaged into 1-degree display cells. All decades use the same colour scale. Coastal outlines are approximate.</p>
     </section>
 
+    <!-- A separate container and status message for the seasonal map. -->
+    <section aria-labelledby="seasonal-heading">
+      <h2 id="seasonal-heading">When does Australia's rain fall?</h2>
+      <p>Explore summer-dominant, winter-dominant, uniform and arid rainfall zones. Choose a 30-year reference period to compare their distribution.</p>
+      <div id="seasonal-map" class="chart"></div>
+      <p id="seasonal-status" class="status" role="status">Loading seasonal rainfall zones...</p>
+      <p class="notes">Colours combine seasonal rainfall patterns with median annual rainfall bands. Hover for the zone and rainfall band. The classification compares November–April with May–October rainfall; it does not show individual seasonal totals. Adjacent reference periods overlap by 20 years.</p>
+      <p class="notes">Source: Bureau of Meteorology, <a href="https://www.bom.gov.au/climate/maps/averages/climate-classification/?maptype=seasb">AGCDv2 seasonal rainfall zones</a>. Boundaries are simplified for display; small offshore islands and state borders are omitted.</p>
+    </section>
+
     <section aria-labelledby="monthly-heading">
       <h2 id="monthly-heading">When was rainfall above or below usual?</h2>
       <p>Choose a capital city to compare each month's rainfall with that station's average for the same month during 1991–2020. Brown means drier, teal means wetter, and near-white means close to average.</p>
@@ -53,7 +63,7 @@
     </section>
   </main>
   <script>
-    // Keep the three chart specifications and their data files beside index.html.
+    // Keep the four chart specifications and their data files beside index.html.
     // Load the libraries once, then reuse this function for each chart.
     async function loadChart(elementId, specFile, statusId) {
       const element = document.getElementById(elementId);
@@ -65,7 +75,8 @@
         // Reserve room for axes so the chart fits a small laptop screen.
         const chartWidth = () => Math.max(160, Math.min(760, element.clientWidth - 95));
         spec.width = chartWidth();
-        if (elementId === 'rainfall-map') spec.height = Math.round(spec.width * 0.74);
+        const isMap = elementId === 'rainfall-map' || elementId === 'seasonal-map';
+        if (isMap) spec.height = Math.round(spec.width * 0.8);
         const result = await vegaEmbed(element, spec, { renderer: 'canvas', actions: false });
         status.textContent = '';
         // Resize the existing view instead of downloading its data again.
@@ -75,7 +86,7 @@
           if (width === previousWidth) return;
           previousWidth = width;
           result.view.width(width);
-          if (elementId === 'rainfall-map') result.view.height(Math.round(width * 0.74));
+          if (isMap) result.view.height(Math.round(width * 0.8));
           result.view.resize().runAsync().catch(console.error);
         }).observe(element);
       } catch (error) {
@@ -85,6 +96,7 @@
     }
     // Each chart has its own container and independent loading/error message.
     loadChart('rainfall-map', 'rainfall-map.vl.json', 'status');
+    loadChart('seasonal-map', 'seasonal-rainfall.vl.json', 'seasonal-status');
     loadChart('monthly-rainfall', 'monthly-heatmap.vl.json', 'monthly-status');
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
   </script>
