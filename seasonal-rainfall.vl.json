@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Seasonal rainfall minor zones from BoM AGCDv2. Categories combine median annual rainfall and the ratio of November\u2013April to May\u2013October median rainfall. Boundaries simplified for display.",
+  "usermeta": {
+    "comments": {
+      "data": "External GeoJSON holds categorical zone polygons for all five periods.",
+      "params": "Select a 30-year climatology period. These periods overlap.",
+      "transform": "Only draw the selected period.",
+      "projection": "Australia-centred equal-area map projection.",
+      "color": "Nominal categories use the recommended BoM colours from NetCDF metadata; they are not a continuous rainfall scale."
+    }
+  },
+  "title": {
+    "text": "Seasonal rainfall zones of Australia",
+    "subtitle": {
+      "expr": "'30-year climatology: ' + period"
+    },
+    "anchor": "start",
+    "fontSize": 22
+  },
+  "width": 650,
+  "height": 530,
+  "background": "#faf9f4",
+  "data": {
+    "url": "seasonal-zones.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "params": [
+    {
+      "name": "period",
+      "value": "1951-1980",
+      "bind": {
+        "input": "select",
+        "options": [
+          "1951-1980",
+          "1961-1990",
+          "1971-2000",
+          "1981-2010",
+          "1991-2020"
+        ],
+        "name": "Reference period: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.properties.period === period"
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": null
+  },
+  "encoding": {
+    "color": {
+      "field": "properties.label",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Summer dominant | >1200 mm",
+          "Summer dominant | 650\u20131200 mm",
+          "Summer dominant | 350\u2013650 mm",
+          "Summer | >1200 mm",
+          "Summer | 650\u20131200 mm",
+          "Summer | 350\u2013650 mm",
+          "Uniform | >800 mm",
+          "Uniform | 500\u2013800 mm",
+          "Uniform | 250\u2013500 mm",
+          "Winter | >800 mm",
+          "Winter | 500\u2013800 mm",
+          "Winter | 250\u2013500 mm",
+          "Winter dominant | >800 mm",
+          "Winter dominant | 500\u2013800 mm",
+          "Winter dominant | 250\u2013500 mm",
+          "Arid | <350 mm"
+        ],
+        "range": [
+          "#ba1c3a",
+          "#bf505c",
+          "#d08484",
+          "#b5981f",
+          "#e3cf60",
+          "#f5ea9d",
+          "#167535",
+          "#50b05f",
+          "#92c586",
+          "#4f6060",
+          "#7b8a8d",
+          "#afbcc0",
+          "#1e5888",
+          "#3971a7",
+          "#719ecb",
+          "#fffcdf"
+        ]
+      },
+      "legend": {
+        "title": "Zone | median annual rainfall",
+        "orient": "bottom",
+        "columns": 2,
+        "labelLimit": 320,
+        "titleLimit": 450,
+        "symbolType": "square",
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.period",
+        "title": "Reference period"
+      },
+      {
+        "field": "properties.zone",
+        "title": "Seasonal rainfall zone"
+      },
+      {
+        "field": "properties.band",
+        "title": "Median annual rainfall band"
+      },
+      {
+        "field": "properties.code",
+        "title": "BoM zone code"
+      }
+    ]
+  },
+  "config": {
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    }
+  }
+}
