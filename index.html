@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Australian Climate Trends</title>
+  <!-- Load the chart libraries in this order. -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body { margin: 0; background: #faf9f4; color: #213c32; font: 16px/1.6 Arial, sans-serif; }
+    main { max-width: 900px; margin: 40px auto; padding: 0 24px; }
+    #rainfall-map { width: 100%; overflow-x: auto; }
+    select { padding: 8px; font: inherit; }
+    .vega-bindings { margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Australian Climate Trends</h1>
+    <p>Explore mean annual rainfall across Australia. Choose a decade to compare regional rainfall patterns.</p>
+    <!-- Vega Embed draws the chart inside this element. -->
+    <div id="rainfall-map"></div>
+    <p id="status" role="status">Loading rainfall map...</p>
+    <p>Source: <a href="https://www.bom.gov.au/climate/maps/averages/decadal-rainfall/">Bureau of Meteorology</a>. Rainfall is shown in mm/year, averaged over each ten-year period.</p>
+    <p>The original grids are averaged into 1-degree display cells. All decades use the same colour scale. Coastal outlines are approximate.</p>
+  </main>
+  <script>
+    // Keep index.html, this chart JSON and its GeoJSON data in the same folder.
+    // The chart JSON tells Vega-Lite how to draw the map and where to load its data.
+    vegaEmbed('#rainfall-map', 'rainfall-map.vl.json', { renderer: 'canvas', actions: false })
+      .then(() => { document.getElementById('status').textContent = ''; })
+      .catch(error => {
+        document.getElementById('status').textContent =
+          'Could not load the map. Check that rainfall-map.vl.json and rainfall-decades.geojson are uploaded beside index.html.';
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
