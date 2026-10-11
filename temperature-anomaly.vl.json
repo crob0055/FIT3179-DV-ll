@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Australian annual mean temperature anomalies, 1910\u20132025, relative to 1961\u20131990. Values transcribed directly from the supplied workbook; baseline and attribution from its embedded BoM chart.",
+  "usermeta": {
+    "comments": {
+      "data": "Load annual observations from a separate file. No baseline recalculation is needed.",
+      "transform": "Each bar spans one year, centred on its year value. Classify the sign for the legend.",
+      "layer": "First draw annual bars, then overlay the zero-reference line.",
+      "encoding": "Year runs horizontally; anomaly in degrees Celsius vertically. Colour shows above/below the baseline."
+    }
+  },
+  "title": {
+    "text": "Annual mean temperature anomaly",
+    "subtitle": [
+      "Australia, 1910\u20132025",
+      "Difference from the 1961\u20131990 average (\u00b0C)"
+    ],
+    "anchor": "start",
+    "fontSize": 23,
+    "subtitleFontSize": 13,
+    "offset": 18
+  },
+  "width": 760,
+  "height": 390,
+  "background": "#faf9f4",
+  "data": {
+    "url": "annual-temperature.json"
+  },
+  "transform": [
+    {
+      "calculate": "datum.year - 0.43",
+      "as": "start"
+    },
+    {
+      "calculate": "datum.year + 0.43",
+      "as": "end"
+    },
+    {
+      "calculate": "datum.anomaly >= 0 ? 'Above average' : 'Below average'",
+      "as": "comparison"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "orient": "vertical",
+        "stroke": "#444",
+        "strokeWidth": 0.35
+      },
+      "encoding": {
+        "x": {
+          "field": "start",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1909.4,
+              2025.6
+            ],
+            "nice": false
+          },
+          "axis": {
+            "title": "Year",
+            "values": [
+              1910,
+              1920,
+              1930,
+              1940,
+              1950,
+              1960,
+              1970,
+              1980,
+              1990,
+              2000,
+              2010,
+              2020,
+              2025
+            ],
+            "format": "d",
+            "grid": false,
+            "labelOverlap": true
+          }
+        },
+        "x2": {
+          "field": "end"
+        },
+        "y2": {
+          "datum": 0
+        },
+        "y": {
+          "field": "anomaly",
+          "type": "quantitative",
+          "title": "Mean temperature anomaly (\u00b0C)",
+          "scale": {
+            "domain": [
+              -1.4,
+              1.7
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              -1,
+              -0.5,
+              0,
+              0.5,
+              1,
+              1.5
+            ],
+            "format": ".1f",
+            "gridColor": "#e1e0db"
+          }
+        },
+        "color": {
+          "field": "comparison",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Above average",
+              "Below average"
+            ],
+            "range": [
+              "#e33b36",
+              "#344dcc"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Year"
+          },
+          {
+            "field": "anomaly",
+            "type": "quantitative",
+            "format": "+.2f",
+            "title": "Difference from 1961\u20131990 (\u00b0C)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#555",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titlePadding": 12
+    }
+  }
+}
