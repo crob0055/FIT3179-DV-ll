@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mean annual rainfall by decade. Source: Bureau of Meteorology decadal rainfall grids. Values are spatially averaged to 1-degree display cells; coastal cells are approximate. No-data values are excluded. Values are already annual means: do not divide by 10.",
+  "usermeta": {
+    "comments": {
+      "title": "The title explains the measure; the selected decade appears in the subtitle.",
+      "data": "Prepared GeoJSON converts the original zipped ASCII grids into shapes Vega-Lite can draw.",
+      "params": "The dropdown changes selectedDecade, which is used to choose the matching property on each cell.",
+      "projection": "An Australia-centred conic equal-area projection preserves relative geographic areas. The source cells themselves are not equal-area bins.",
+      "transform": "Read the selected decade value into rainfall_mm and omit missing values.",
+      "mark": "geoshape draws each grid-cell polygon.",
+      "color": "Fixed class boundaries across all decades make colours comparable. These rounded display thresholds are not scientific climate categories.",
+      "tooltip": "Hover to see the decade, cell-centre coordinates and mean annual rainfall."
+    }
+  },
+  "title": {
+    "text": "Mean annual rainfall by decade",
+    "subtitle": {
+      "expr": "selectedDecade + ' | Bureau of Meteorology | mm/year'"
+    },
+    "anchor": "start",
+    "fontSize": 24,
+    "subtitleFontSize": 14,
+    "offset": 18
+  },
+  "width": 760,
+  "height": 560,
+  "background": "#faf9f4",
+  "params": [
+    {
+      "name": "selectedDecade",
+      "value": "2011-2020",
+      "bind": {
+        "input": "select",
+        "options": [
+          "1911-1920",
+          "1921-1930",
+          "1931-1940",
+          "1941-1950",
+          "1951-1960",
+          "1961-1970",
+          "1971-1980",
+          "1981-1990",
+          "1991-2000",
+          "2001-2010",
+          "2011-2020"
+        ],
+        "name": "Choose a decade: "
+      }
+    }
+  ],
+  "data": {
+    "url": "rainfall-decades.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.properties[selectedDecade]",
+      "as": "rainfall_mm"
+    },
+    {
+      "filter": "isValid(datum.rainfall_mm)"
+    },
+    {
+      "calculate": "selectedDecade",
+      "as": "decade"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": null
+  },
+  "encoding": {
+    "color": {
+      "field": "rainfall_mm",
+      "type": "quantitative",
+      "title": "Mean annual rainfall (mm/year)",
+      "scale": {
+        "type": "threshold",
+        "domain": [
+          250,
+          500,
+          750,
+          1000,
+          1500,
+          2000
+        ],
+        "range": [
+          "#ffffcc",
+          "#d9f0a3",
+          "#addd8e",
+          "#78c679",
+          "#41ab5d",
+          "#238443",
+          "#005a32"
+        ]
+      },
+      "legend": {
+        "type": "symbol",
+        "titleLimit": 500,
+        "labelLimit": 180,
+        "symbolType": "square",
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 4,
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "format": ",.0f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "decade",
+        "type": "nominal",
+        "title": "Decade"
+      },
+      {
+        "field": "rainfall_mm",
+        "type": "quantitative",
+        "title": "Mean annual rainfall (mm/year)",
+        "format": ",.1f"
+      },
+      {
+        "field": "properties.longitude",
+        "type": "quantitative",
+        "title": "Cell centre longitude",
+        "format": ".2f"
+      },
+      {
+        "field": "properties.latitude",
+        "type": "quantitative",
+        "title": "Cell centre latitude",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial"
+  }
+}
