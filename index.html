@@ -61,9 +61,18 @@
       <p id="temperature-status" class="status" role="status">Loading annual temperatures...</p>
       <p class="notes">Source: Australian Bureau of Meteorology, as attributed in the supplied annual temperature workbook. Covers 1910–2025. The temperature and rainfall charts use different reference periods, shown with each chart.</p>
     </section>
+    <section aria-labelledby="city-temperature-heading">
+      <h2 id="city-temperature-heading">How have daytime temperatures changed across the capitals?</h2>
+      <p>Compare average daily maximum temperatures in 1997–2010 and 2011–2024. Blue circles show the earlier period; orange circles show the recent period. The connecting line and label show the difference in degrees Celsius. Choose a season below the chart.</p>
+      <!-- The dumbbell chart uses its own specification and separate data file. -->
+      <div id="city-temperature" class="chart"></div>
+      <p id="city-temperature-status" class="status" role="status">Loading city temperatures...</p>
+      <p class="notes">Both periods contain 14 complete seasons at each selected station. Monthly means are weighted by calendar days, then seasonal means averaged across years. Summer includes December of the preceding year. These are average daytime highs, not record maximum temperatures.</p>
+      <p class="notes">Source: Bureau of Meteorology, <a href="https://www.bom.gov.au/climate/data/">Climate Data Online</a>, product IDCJAC0002. Brisbane region is represented by Amberley and Canberra by Tuggeranong; hover for each station's name. These station comparisons are not city-wide averages, 30-year climate normals or a statistical trend test.</p>
+    </section>
   </main>
   <script>
-    // Keep the four chart specifications and their data files beside index.html.
+    // Keep the five chart specifications and their data files beside index.html.
     // Load the libraries once, then reuse this function for each chart.
     async function loadChart(elementId, specFile, statusId) {
       const element = document.getElementById(elementId);
@@ -73,7 +82,9 @@
         if (!response.ok) throw new Error(`Could not load ${specFile}: ${response.status}`);
         const spec = await response.json();
         // Reserve room for axes so the chart fits a small laptop screen.
-        const chartWidth = () => Math.max(160, Math.min(760, element.clientWidth - 95));
+        // The dumbbell chart needs extra space for its city labels on the left.
+        const sideSpace = elementId === 'city-temperature' ? 250 : 95;
+        const chartWidth = () => Math.max(160, Math.min(760, element.clientWidth - sideSpace));
         spec.width = chartWidth();
         const isMap = elementId === 'rainfall-map' || elementId === 'seasonal-map';
         if (isMap) spec.height = Math.round(spec.width * 0.8);
@@ -99,6 +110,7 @@
     loadChart('seasonal-map', 'seasonal-rainfall.vl.json', 'seasonal-status');
     loadChart('monthly-rainfall', 'monthly-heatmap.vl.json', 'monthly-status');
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
+    loadChart('city-temperature', 'temperature-dumbbell.vl.json', 'city-temperature-status');
   </script>
 </body>
 </html>
