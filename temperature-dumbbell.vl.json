@@ -1,0 +1,226 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How have daytime temperatures changed?",
+    "subtitle": [
+      "1997\u20132010 compared with 2011\u20132024",
+      "Selected stations; mean daily maximum temperature"
+    ],
+    "anchor": "start"
+  },
+  "width": 570,
+  "height": 350,
+  "background": "#faf9f4",
+  "data": {
+    "url": "city-temperature-comparison.json"
+  },
+  "params": [
+    {
+      "name": "season",
+      "value": "Summer (Dec\u2013Feb)",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Summer (Dec\u2013Feb)",
+          "Autumn (Mar\u2013May)",
+          "Winter (Jun\u2013Aug)",
+          "Spring (Sep\u2013Nov)"
+        ],
+        "name": "Season: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.season === season"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "city",
+      "type": "nominal",
+      "sort": [
+        "Adelaide",
+        "Brisbane region (Amberley)",
+        "Canberra",
+        "Darwin",
+        "Hobart",
+        "Melbourne",
+        "Perth",
+        "Sydney"
+      ],
+      "title": null,
+      "axis": {
+        "labelLimit": 210
+      }
+    },
+    "tooltip": [
+      {
+        "field": "city",
+        "title": "City / region"
+      },
+      {
+        "field": "station",
+        "title": "Station"
+      },
+      {
+        "field": "station_id",
+        "title": "Station ID"
+      },
+      {
+        "field": "season",
+        "title": "Season"
+      },
+      {
+        "field": "earlier",
+        "title": "1997\u20132010 (\u00b0C)",
+        "type": "quantitative",
+        "format": ".2f"
+      },
+      {
+        "field": "recent",
+        "title": "2011\u20132024 (\u00b0C)",
+        "type": "quantitative",
+        "format": ".2f"
+      },
+      {
+        "field": "change",
+        "title": "Change (\u00b0C)",
+        "type": "quantitative",
+        "format": "+.2f"
+      },
+      {
+        "field": "earlier_n",
+        "title": "Earlier complete seasons / 14"
+      },
+      {
+        "field": "recent_n",
+        "title": "Recent complete seasons / 14"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#aeb9b4"
+      },
+      "encoding": {
+        "x": {
+          "field": "earlier",
+          "type": "quantitative",
+          "title": "Mean maximum temperature (\u00b0C)",
+          "scale": {
+            "domain": [
+              10,
+              36
+            ],
+            "zero": false
+          }
+        },
+        "x2": {
+          "field": "recent"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "earlier",
+            "recent"
+          ],
+          "as": [
+            "period_key",
+            "temperature"
+          ]
+        },
+        {
+          "calculate": "datum.period_key === 'earlier' ? '1997\u20132010' : '2011\u20132024'",
+          "as": "period"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 110,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "temperature",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "period",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "1997\u20132010",
+              "2011\u20132024"
+            ],
+            "range": [
+              "#287b9e",
+              "#ce6034"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 12,
+        "color": "#30443c"
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum.change)"
+        },
+        {
+          "calculate": "format(datum.change, '+.2f') + ' \u00b0C'",
+          "as": "label"
+        },
+        {
+          "calculate": "max(datum.earlier, datum.recent)",
+          "as": "right"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "right",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
+  },
+  "usermeta": {
+    "comments": {
+      "data": "One record per station and season. All eight use the same two 14-year periods.",
+      "params": "Dropdown filters to one season.",
+      "layer": "A grey rule joins the two temperatures; coloured circles identify periods; text reports the difference.",
+      "method": "Use only QC-Y monthly means. Require all three months per season and at least 10 complete seasons per period. Weight months by calendar days then average seasonal means equally across years. This approximates a daily-weighted mean because daily observation counts are unavailable. Summer uses December of the preceding year."
+    }
+  }
+}
