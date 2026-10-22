@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Projected mean temperature in the capitals",
+    "subtitle": "Points: model median | bars: model minimum\u2013maximum",
+    "anchor": "start"
+  },
+  "width": 650,
+  "height": 380,
+  "data": {
+    "url": "temperature-projections.json"
+  },
+  "params": [
+    {
+      "name": "city",
+      "value": "Melbourne",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Adelaide",
+          "Brisbane",
+          "Canberra",
+          "Darwin",
+          "Hobart",
+          "Melbourne",
+          "Perth",
+          "Sydney"
+        ],
+        "name": "City: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.city === city"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "period",
+      "type": "ordinal",
+      "sort": [
+        "2020-2039",
+        "2040-2059",
+        "2060-2079",
+        "2080-2099"
+      ],
+      "title": "Projected 20-year average",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "xOffset": {
+      "field": "scenario",
+      "sort": [
+        "RCP 2.6",
+        "RCP 4.5",
+        "RCP 6.0",
+        "RCP 8.5"
+      ]
+    },
+    "color": {
+      "field": "scenario",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "RCP 2.6",
+          "RCP 4.5",
+          "RCP 6.0",
+          "RCP 8.5"
+        ],
+        "range": [
+          "#007c91",
+          "#56834b",
+          "#c68625",
+          "#b94450"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "city",
+        "title": "City"
+      },
+      {
+        "field": "station",
+        "title": "Station"
+      },
+      {
+        "field": "period",
+        "title": "20-year period"
+      },
+      {
+        "field": "scenario",
+        "title": "Scenario"
+      },
+      {
+        "field": "median",
+        "title": "Model median (\u00b0C)",
+        "format": ".2f",
+        "type": "quantitative"
+      },
+      {
+        "field": "low",
+        "title": "Model minimum (\u00b0C)",
+        "format": ".2f",
+        "type": "quantitative"
+      },
+      {
+        "field": "high",
+        "title": "Model maximum (\u00b0C)",
+        "format": ".2f",
+        "type": "quantitative"
+      },
+      {
+        "field": "models",
+        "title": "Available models"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "low",
+          "type": "quantitative",
+          "title": "Projected annual mean temperature (\u00b0C)",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y2": {
+          "field": "high"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 75
+      },
+      "encoding": {
+        "y": {
+          "field": "median",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Arial",
+    "background": "#faf9f4",
+    "view": {
+      "stroke": null
+    }
+  },
+  "usermeta": {
+    "comments": "Each record summarizes available models for one station, scenario and period. Ranges are not confidence intervals or the full range of possible futures. Values are absolute projected means, not anomalies. Source page identifies supplied tas CSV as mean temperature."
+  }
+}
