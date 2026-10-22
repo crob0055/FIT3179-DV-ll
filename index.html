@@ -80,12 +80,12 @@
     </section>
 
     <section aria-labelledby="future-fire-heading">
-      <h2 id="future-fire-heading">Where could dangerous fire weather be more frequent?</h2>
-      <p>Choose an emissions scenario and projection time slice. Circle area represents the model-median number of days per year in the combined FFDI 50–75, 75–100 and above-100 bands. Larger circles indicate more days with these fire-weather conditions.</p>
+      <h2 id="future-fire-heading">How has dangerous fire weather changed?</h2>
+      <p>Compare July 1987–June 2024 with July 1950–June 1987. Larger circles show larger changes in the frequency of dangerous fire weather. Orange indicates an increase; blue indicates a decrease.</p>
       <div id="future-fire" class="chart"></div>
-      <p id="future-fire-status" class="status" role="status">Loading fire-weather projections...</p>
-      <p class="notes">FFDI means Forest Fire Danger Index. This chart describes fire-weather conditions, not the number of bushfires. The size scale stays fixed across selections. Hover for the range across three models and the historical reference. Zero-valued locations have no visible circle. Fractional days are averages.</p>
-      <p class="notes">Source: CSIRO and Bureau of Meteorology, <a href="https://www.climatechangeinaustralia.gov.au/en/obtain-data/download-datasets/#FFDI">NRM CMIP5 fire-danger summaries</a>. Time-slice labels are retained from the source; they are not exact annual forecasts. FFDI bands are the source's categories, not today's operational fire-danger ratings. Scenarios are alternative pathways without assigned probabilities.</p>
+      <p id="future-fire-status" class="status" role="status">Loading fire-weather changes...</p>
+      <p class="notes">Dangerous days have a Forest Fire Danger Index above the local 90th percentile over the full period. Circles summarise 2° regions using area-weighted averages of valid grid-cell changes; they are not weather stations or bushfire counts. Hover for the region and mean change. Zero change has no visible circle.</p>
+      <p class="notes">Units follow the source CSV header: percentage change, not additional days per year. The report's map describes change in days, so this metadata discrepancy must be resolved before interpreting these values as day counts. Source: CSIRO and Bureau of Meteorology, <a href="https://doi.org/10.25919/7sb3-gk48">State of the Climate 2024 figure data</a>, FW01 (CC BY 4.0).</p>
     </section>
   </main>
   <script>
@@ -129,7 +129,7 @@
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
     loadChart('city-temperature', 'temperature-dumbbell.vl.json', 'city-temperature-status');
     loadChart('future-temperature', 'temperature-projection.vl.json', 'future-temperature-status');
-    loadChart('future-fire', 'fire-projection-map.vl.json', 'future-fire-status');
+    loadChart('future-fire', 'fire-weather-change.vl.json', 'future-fire-status');
   </script>
 </body>
 </html>
