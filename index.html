@@ -70,9 +70,26 @@
       <p class="notes">Both periods contain 14 complete seasons at each selected station. Monthly means are weighted by calendar days, then seasonal means averaged across years. Summer includes December of the preceding year. These are average daytime highs, not record maximum temperatures.</p>
       <p class="notes">Source: Bureau of Meteorology, <a href="https://www.bom.gov.au/climate/data/">Climate Data Online</a>, product IDCJAC0002. Brisbane region is represented by Amberley and Canberra by Tuggeranong; hover for each station's name. These station comparisons are not city-wide averages, 30-year climate normals or a statistical trend test.</p>
     </section>
+    <section aria-labelledby="future-temperature-heading">
+      <h2 id="future-temperature-heading">What could future temperatures look like?</h2>
+      <p>Choose a capital city to compare projected annual mean temperatures under four emissions pathways. Each point represents the median of the available models; the vertical bar spans their minimum and maximum.</p>
+      <div id="future-temperature" class="chart"></div>
+      <p id="future-temperature-status" class="status" role="status">Loading temperature projections...</p>
+      <p class="notes">Values are projected 20-year averages, not forecasts for individual years. Model counts vary between scenarios (4, 6 or 8); hover for the station and model count. Ranges show model spread, not confidence intervals or all possible outcomes. These are mean temperatures, unlike the daytime maximum temperatures in the preceding chart.</p>
+      <p class="notes">Source: CSIRO and Bureau of Meteorology, <a href="https://www.climatechangeinaustralia.gov.au/en/obtain-data/download-datasets/">Climate Change in Australia NRM CMIP5 station projections</a>, released in 2015. The supplied tas file is identified as mean temperature on the source download page. These are older CMIP5 projections, not the latest CMIP6 generation.</p>
+    </section>
+
+    <section aria-labelledby="future-fire-heading">
+      <h2 id="future-fire-heading">Where could dangerous fire weather be more frequent?</h2>
+      <p>Choose an emissions scenario and projection time slice. Circle area represents the model-median number of days per year in the combined FFDI 50–75, 75–100 and above-100 bands. Larger circles indicate more days with these fire-weather conditions.</p>
+      <div id="future-fire" class="chart"></div>
+      <p id="future-fire-status" class="status" role="status">Loading fire-weather projections...</p>
+      <p class="notes">FFDI means Forest Fire Danger Index. This chart describes fire-weather conditions, not the number of bushfires. The size scale stays fixed across selections. Hover for the range across three models and the historical reference. Zero-valued locations have no visible circle. Fractional days are averages.</p>
+      <p class="notes">Source: CSIRO and Bureau of Meteorology, <a href="https://www.climatechangeinaustralia.gov.au/en/obtain-data/download-datasets/#FFDI">NRM CMIP5 fire-danger summaries</a>. Time-slice labels are retained from the source; they are not exact annual forecasts. FFDI bands are the source's categories, not today's operational fire-danger ratings. Scenarios are alternative pathways without assigned probabilities.</p>
+    </section>
   </main>
   <script>
-    // Keep the five chart specifications and their data files beside index.html.
+    // Keep the seven chart specifications and their data files beside index.html.
     // Load the libraries once, then reuse this function for each chart.
     async function loadChart(elementId, specFile, statusId) {
       const element = document.getElementById(elementId);
@@ -86,7 +103,7 @@
         const sideSpace = elementId === 'city-temperature' ? 250 : 95;
         const chartWidth = () => Math.max(160, Math.min(760, element.clientWidth - sideSpace));
         spec.width = chartWidth();
-        const isMap = elementId === 'rainfall-map' || elementId === 'seasonal-map';
+        const isMap = ['rainfall-map', 'seasonal-map', 'future-fire'].includes(elementId);
         if (isMap) spec.height = Math.round(spec.width * 0.8);
         const result = await vegaEmbed(element, spec, { renderer: 'canvas', actions: false });
         status.textContent = '';
@@ -111,6 +128,8 @@
     loadChart('monthly-rainfall', 'monthly-heatmap.vl.json', 'monthly-status');
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
     loadChart('city-temperature', 'temperature-dumbbell.vl.json', 'city-temperature-status');
+    loadChart('future-temperature', 'temperature-projection.vl.json', 'future-temperature-status');
+    loadChart('future-fire', 'fire-projection-map.vl.json', 'future-fire-status');
   </script>
 </body>
 </html>
