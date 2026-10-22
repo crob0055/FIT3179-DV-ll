@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Are our capitals getting wetter or drier?",
+    "subtitle": {
+      "expr": "city + ' | Annual rainfall and trailing 10-year average | 1970\u20132025'"
+    },
+    "anchor": "start"
+  },
+  "width": 680,
+  "height": 380,
+  "data": {
+    "url": "annual-rainfall.json"
+  },
+  "params": [
+    {
+      "name": "city",
+      "value": "Perth",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Adelaide",
+          "Brisbane",
+          "Canberra",
+          "Darwin",
+          "Hobart",
+          "Melbourne",
+          "Perth",
+          "Sydney"
+        ],
+        "name": "City: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.city === city"
+    },
+    {
+      "fold": [
+        "annual_mm",
+        "rolling_mm"
+      ],
+      "as": [
+        "measure",
+        "rainfall"
+      ]
+    },
+    {
+      "calculate": "datum.measure === 'annual_mm' ? 'Annual total' : 'Trailing 10-year average'",
+      "as": "series"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "domain": [
+          1970,
+          2025
+        ]
+      },
+      "axis": {
+        "format": "d",
+        "tickCount": 8,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "rainfall",
+      "type": "quantitative",
+      "title": "Rainfall (mm/year)",
+      "scale": {
+        "zero": true
+      }
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Annual total",
+          "Trailing 10-year average"
+        ],
+        "range": [
+          "#9bbbc4",
+          "#176150"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "labelLimit": 250
+      }
+    },
+    "tooltip": [
+      {
+        "field": "city",
+        "title": "City"
+      },
+      {
+        "field": "station",
+        "title": "Station"
+      },
+      {
+        "field": "station_id",
+        "title": "Station ID"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "annual_mm",
+        "title": "Annual rainfall (mm)",
+        "type": "quantitative",
+        "format": ",.1f"
+      },
+      {
+        "field": "rolling_mm",
+        "title": "Trailing 10-year average (mm/year)",
+        "type": "quantitative",
+        "format": ",.1f"
+      },
+      {
+        "field": "window_start",
+        "title": "Rolling window starts"
+      },
+      {
+        "field": "months",
+        "title": "Months available / 12"
+      },
+      {
+        "field": "pending_months",
+        "title": "Months with QC pending"
+      },
+      {
+        "field": "window_pending_months",
+        "title": "QC-pending months in rolling window"
+      },
+      {
+        "field": "coverage",
+        "title": "Coverage"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "invalid": "filter"
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.measure === 'rolling_mm'",
+            "value": 3.5
+          },
+          "value": 1.2
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 22
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "test": "datum.measure === 'annual_mm'",
+            "value": 0.8
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Arial",
+    "background": "#faf9f4",
+    "view": {
+      "stroke": null
+    }
+  },
+  "usermeta": {
+    "comments": {
+      "data": "Annual totals are calculated only when all 12 monthly observations exist. Pending-QC observations are retained and counted in tooltips.",
+      "rolling": "At year Y, average annual totals from Y\u22129 through Y. All 10 calendar years must be complete. Missing years are not interpolated.",
+      "line": "Null records are retained and invalid:filter breaks the line at missing values in Vega-Lite 5.",
+      "interpretation": "Descriptive station series, not a statistical trend test or city-wide average. Vertical scale adapts to the selected city and always starts at zero."
+    }
+  }
+}

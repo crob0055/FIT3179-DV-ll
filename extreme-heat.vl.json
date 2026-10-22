@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Annual number of days with Australian area-averaged daily mean temperature in the warmest 1% for the respective calendar month over 1910\u20132023. Source: CSIRO and Bureau of Meteorology, State of the Climate 2024.",
+  "usermeta": {
+    "source": "https://doi.org/10.25919/7sb3-gk48",
+    "licence": "CC BY 4.0",
+    "comments": {
+      "data": "Loads the year and annual total from a separate JSON file. Monthly sums were checked against the workbook Total column.",
+      "bars": "Each bar spans 0.8 years; the numerical x-axis keeps all 114 years readable. Zero counts are preserved.",
+      "tooltips": "An invisible full-height rectangle for each year lets you hover even when the count is zero.",
+      "annotation": "Labels the largest observed count; the annotation is selected from the data."
+    }
+  },
+  "title": {
+    "text": "Extreme heat days are becoming more frequent",
+    "subtitle": [
+      "Australia, 1910\u20132023 | Annual count",
+      "Days in the warmest 1% for their calendar month across 1910\u20132023"
+    ],
+    "anchor": "start",
+    "fontSize": 23,
+    "subtitleFontSize": 12,
+    "offset": 18
+  },
+  "width": 760,
+  "height": 360,
+  "background": "#faf9f4",
+  "data": {
+    "url": "extreme-heat-days.json"
+  },
+  "transform": [
+    {
+      "calculate": "datum.year - 0.4",
+      "as": "start"
+    },
+    {
+      "calculate": "datum.year + 0.4",
+      "as": "end"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "start",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          1909.5,
+          2023.5
+        ],
+        "nice": false
+      },
+      "axis": {
+        "title": "Year",
+        "format": "d",
+        "values": [
+          1910,
+          1920,
+          1930,
+          1940,
+          1950,
+          1960,
+          1970,
+          1980,
+          1990,
+          2000,
+          2010,
+          2020
+        ],
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "days",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          45
+        ]
+      },
+      "axis": {
+        "title": "Extreme heat days",
+        "tickMinStep": 1
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#c45636",
+        "orient": "vertical"
+      },
+      "encoding": {
+        "x2": {
+          "field": "end"
+        },
+        "y2": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "joinaggregate": [
+            {
+              "op": "max",
+              "field": "days",
+              "as": "maximum"
+            }
+          ]
+        },
+        {
+          "filter": "datum.days == datum.maximum"
+        },
+        {
+          "calculate": "datum.year + ': ' + datum.days + ' days'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": -12,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#823723"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "opacity": 0
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        },
+        "y2": {
+          "datum": 45
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "days",
+            "type": "quantitative",
+            "title": "Extreme heat days",
+            "format": "d"
+          }
+        ],
+        "x2": {
+          "field": "end"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Arial",
+      "titleFont": "Arial",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "gridColor": "#e6e3dc",
+      "domainColor": "#a6aaa5",
+      "titlePadding": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "color": "#233a35",
+      "subtitleColor": "#59665f"
+    }
+  }
+}

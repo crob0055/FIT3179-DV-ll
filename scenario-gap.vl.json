@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How much difference could the emissions pathway make?",
+    "subtitle": [
+      "2080\u20132099 annual mean temperature: RCP8.5 minus RCP2.6",
+      "Dot: median paired difference | line: range across matched models"
+    ],
+    "anchor": "start",
+    "fontSize": 19,
+    "subtitleFontSize": 12
+  },
+  "width": 620,
+  "height": 350,
+  "data": {
+    "url": "scenario-gap.json"
+  },
+  "encoding": {
+    "y": {
+      "field": "city",
+      "type": "nominal",
+      "sort": {
+        "field": "median",
+        "order": "descending"
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "city",
+        "title": "City"
+      },
+      {
+        "field": "station",
+        "title": "Station"
+      },
+      {
+        "field": "period",
+        "title": "Projection period"
+      },
+      {
+        "field": "median",
+        "title": "Median paired gap (\u00b0C)",
+        "type": "quantitative",
+        "format": ".2f"
+      },
+      {
+        "field": "minimum",
+        "title": "Minimum paired gap (\u00b0C)",
+        "type": "quantitative",
+        "format": ".2f"
+      },
+      {
+        "field": "maximum",
+        "title": "Maximum paired gap (\u00b0C)",
+        "type": "quantitative",
+        "format": ".2f"
+      },
+      {
+        "field": "model_count",
+        "title": "Matched models"
+      },
+      {
+        "field": "models",
+        "title": "Model names"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#9aadb4",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "minimum",
+          "type": "quantitative",
+          "title": "Higher-scenario minus lower-scenario temperature (\u00b0C)",
+          "scale": {
+            "zero": true
+          }
+        },
+        "x2": {
+          "field": "maximum"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100,
+        "color": "#ad4936"
+      },
+      "encoding": {
+        "x": {
+          "field": "median",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "format(datum.median, '+.2f') + ' \u00b0C'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -15,
+        "fontSize": 12,
+        "color": "#713a2d"
+      },
+      "encoding": {
+        "x": {
+          "field": "median",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Arial",
+    "background": "#faf9f4",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "usermeta": {
+    "comments": {
+      "data": "One summary per capital, derived from the supplied mean-temperature CSV.",
+      "pairing": "Subtract RCP2.6 from RCP8.5 for each matching model first, then calculate the median/min/max of those differences. Do not subtract scenario medians or unmatched extremes.",
+      "range": "Range describes selected model spread, not a confidence interval.",
+      "scope": "Late-century annual mean temperature at a selected station; not warming relative to historical conditions or a causal estimate of local policy impacts."
+    }
+  }
+}

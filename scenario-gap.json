@@ -1,0 +1,82 @@
+[
+  {
+    "city": "Adelaide",
+    "station": "ADELAIDE-KENT-TOWN",
+    "median": 1.99,
+    "minimum": 1.69,
+    "maximum": 2.83,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Brisbane",
+    "station": "BRISBANE-AERO",
+    "median": 2.225,
+    "minimum": 1.74,
+    "maximum": 3.13,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Canberra",
+    "station": "CANBERRA-AIRPORT",
+    "median": 2.46,
+    "minimum": 1.85,
+    "maximum": 3.52,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Darwin",
+    "station": "DARWIN-AIRPORT",
+    "median": 2.245,
+    "minimum": 1.64,
+    "maximum": 2.61,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Hobart",
+    "station": "HOBART-ELLERSLIE-ROAD",
+    "median": 1.98,
+    "minimum": 1.55,
+    "maximum": 3.25,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Melbourne",
+    "station": "MELBOURNE-REGIONAL-OFFICE",
+    "median": 2.09,
+    "minimum": 1.88,
+    "maximum": 2.96,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Perth",
+    "station": "PERTH-AIRPORT",
+    "median": 2.3,
+    "minimum": 2.1,
+    "maximum": 2.7,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  },
+  {
+    "city": "Sydney",
+    "station": "SYDNEY-OBSERVATORY-HILL",
+    "median": 2.31,
+    "minimum": 2.09,
+    "maximum": 3.54,
+    "model_count": 6,
+    "models": "CESM1-CAM5, CNRM-CM5, CanESM2, GFDL-ESM2M, MIROC5, NorESM1-M",
+    "period": "2080\u20132099"
+  }
+]
