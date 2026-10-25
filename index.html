@@ -70,6 +70,15 @@
       <p class="notes">Both periods contain 14 complete seasons at each selected station. Monthly means are weighted by calendar days, then seasonal means averaged across years. Summer includes December of the preceding year. These are average daytime highs, not record maximum temperatures.</p>
       <p class="notes">Source: Bureau of Meteorology, <a href="https://www.bom.gov.au/climate/data/">Climate Data Online</a>, product IDCJAC0002. Brisbane region is represented by Amberley and Canberra by Tuggeranong; hover for each station's name. These station comparisons are not city-wide averages, 30-year climate normals or a statistical trend test.</p>
     </section>
+    <section aria-labelledby="snow-heading">
+      <h2 id="snow-heading">How has peak snow depth changed?</h2>
+      <p>At Spencers Creek in the Snowy Mountains, snow depth varies considerably from year to year. The chart shows the highest recorded depth each year; the dashed line summarises the linear trend through 2025.</p>
+      <div id="snow-peak" class="chart"></div>
+      <p id="snow-status" class="status" role="status">Loading snow depths...</p>
+      <p class="notes">Blue bands mark 100 cm depth intervals. Hover for the recorded maximum, its date and the number of readings that year. Measurements are irregular, so the true seasonal peak may be missed. The incomplete 2026 record is excluded from the trend.</p>
+      <p class="notes">This is snow depth on the ground at one alpine location, not snowfall totals or an Australian average. Source: <a href="https://www.snowyhydro.com.au/generation/live-data/snow-depths/">Snowy Hydro snow-depth records</a>, retrieved 25 October 2026.</p>
+    </section>
+
     <section aria-labelledby="future-temperature-heading">
       <h2 id="future-temperature-heading">What could future temperatures look like?</h2>
       <p>Choose a capital city to compare projected annual mean temperatures under four emissions pathways. Each point represents the median of the available models; the vertical bar spans their minimum and maximum.</p>
@@ -89,7 +98,7 @@
     </section>
   </main>
   <script>
-    // Keep the seven chart specifications and their data files beside index.html.
+    // Keep the chart specifications and their data files beside index.html.
     // Load the libraries once, then reuse this function for each chart.
     async function loadChart(elementId, specFile, statusId) {
       const element = document.getElementById(elementId);
@@ -128,6 +137,7 @@
     loadChart('monthly-rainfall', 'monthly-heatmap.vl.json', 'monthly-status');
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
     loadChart('city-temperature', 'temperature-dumbbell.vl.json', 'city-temperature-status');
+    loadChart('snow-peak', 'snow-peak.vl.json', 'snow-status');
     loadChart('future-temperature', 'temperature-projection.vl.json', 'future-temperature-status');
     loadChart('future-fire', 'fire-weather-change.vl.json', 'future-fire-status');
   </script>
