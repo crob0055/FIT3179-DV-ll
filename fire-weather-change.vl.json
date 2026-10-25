@@ -23,7 +23,7 @@
     "text": "How has dangerous fire weather changed?",
     "subtitle": [
       "July 1987\u2013June 2024 compared with July 1950\u2013June 1987",
-      "Percentage change as labelled in the source file; 2\u00b0 regional summaries"
+      "Percentage change as labelled in source | 22 selected locations"
     ],
     "anchor": "start",
     "fontSize": 21,
@@ -32,11 +32,9 @@
   "usermeta": {
     "source": "https://doi.org/10.25919/7sb3-gk48",
     "comments": {
-      "units": "FW01 header explicitly says PERCENTAGE CHANGE. Do not relabel as additional days/year without resolving the source metadata discrepancy.",
-      "threshold": "FFDI above the local 90th percentile over July 1950\u2013June 2024.",
-      "aggregation": "Cosine-latitude-weighted mean of valid 0.05-degree cell changes in fixed 2-degree bins; not percentage change recalculated from pooled day counts.",
-      "position": "Circles at weighted centroids of valid source cells, not weather stations.",
-      "size": "Circle AREA is proportional to absolute change; colour carries the sign. Zero has zero area."
+      "sampling": "Nearest valid 0.05\u00b0 source cell to each named location. Three per state and NT; one ACT location avoids overlapping symbols. Not state averages or station observations.",
+      "size": "Same custom flame path at every location. Symbol area scales linearly with absolute change; colour encodes sign.",
+      "units": "Source CSV labels percentage change; report day-count discrepancy remains unresolved."
     }
   },
   "layer": [
@@ -1038,10 +1036,12 @@
         "url": "fire-weather-change.json"
       },
       "mark": {
-        "type": "circle",
-        "opacity": 0.72,
-        "stroke": "white",
-        "strokeWidth": 0.5
+        "type": "point",
+        "filled": true,
+        "shape": "M 0,-1 C 0.55,-0.5 0.1,-0.2 0.5,-0.45 C 1.1,0.2 0.65,1 0,1 C -0.8,1 -1,0.25 -0.45,-0.4 C -0.5,0.1 -0.05,0.05 0,-1 Z",
+        "opacity": 0.85,
+        "stroke": "#faf9f4",
+        "strokeWidth": 0.7
       },
       "encoding": {
         "longitude": {
@@ -1062,7 +1062,7 @@
             ],
             "range": [
               0,
-              420
+              1200
             ]
           },
           "legend": {
@@ -1096,13 +1096,17 @@
         },
         "tooltip": [
           {
-            "field": "region",
-            "title": "2\u00b0 region"
+            "field": "location",
+            "title": "Near"
+          },
+          {
+            "field": "state",
+            "title": "State/territory"
           },
           {
             "field": "change",
             "type": "quantitative",
-            "title": "Mean change (%)",
+            "title": "Change (%)",
             "format": "+.1f"
           },
           {
@@ -1110,21 +1114,16 @@
             "title": "Direction"
           },
           {
-            "field": "cells",
-            "title": "Source grid cells",
-            "type": "quantitative"
+            "field": "latitude",
+            "title": "Grid latitude",
+            "type": "quantitative",
+            "format": ".2f"
           },
           {
             "field": "longitude",
-            "title": "Longitude",
-            "format": ".2f",
-            "type": "quantitative"
-          },
-          {
-            "field": "latitude",
-            "title": "Latitude",
-            "format": ".2f",
-            "type": "quantitative"
+            "title": "Grid longitude",
+            "type": "quantitative",
+            "format": ".2f"
           }
         ]
       }
