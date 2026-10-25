@@ -1,0 +1,732 @@
+[
+  {
+    "site": "Spencers Creek",
+    "year": 1954,
+    "max_observed_depth_cm": 113.5,
+    "peak_observation_date": "1954-08-18",
+    "observations": 13,
+    "first_observation": "1954-06-10",
+    "last_observation": "1954-10-12",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1955,
+    "max_observed_depth_cm": 229.6,
+    "peak_observation_date": "1955-08-29",
+    "observations": 28,
+    "first_observation": "1955-06-01",
+    "last_observation": "1955-11-28",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1956,
+    "max_observed_depth_cm": 318.3,
+    "peak_observation_date": "1956-09-11",
+    "observations": 23,
+    "first_observation": "1956-06-12",
+    "last_observation": "1956-12-13",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1957,
+    "max_observed_depth_cm": 151.4,
+    "peak_observation_date": "1957-10-02",
+    "observations": 27,
+    "first_observation": "1957-07-03",
+    "last_observation": "1957-12-04",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1958,
+    "max_observed_depth_cm": 232.7,
+    "peak_observation_date": "1958-09-22",
+    "observations": 44,
+    "first_observation": "1958-05-20",
+    "last_observation": "1958-11-26",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1959,
+    "max_observed_depth_cm": 147.3,
+    "peak_observation_date": "1959-08-14",
+    "observations": 49,
+    "first_observation": "1959-06-09",
+    "last_observation": "1959-11-05",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1960,
+    "max_observed_depth_cm": 293.1,
+    "peak_observation_date": "1960-09-26",
+    "observations": 44,
+    "first_observation": "1960-04-20",
+    "last_observation": "1960-11-30",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1961,
+    "max_observed_depth_cm": 192.3,
+    "peak_observation_date": "1961-09-18",
+    "observations": 23,
+    "first_observation": "1961-04-29",
+    "last_observation": "1961-10-23",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1962,
+    "max_observed_depth_cm": 212.3,
+    "peak_observation_date": "1962-10-08",
+    "observations": 33,
+    "first_observation": "1962-05-21",
+    "last_observation": "1962-11-26",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1963,
+    "max_observed_depth_cm": 192.3,
+    "peak_observation_date": "1963-09-16",
+    "observations": 21,
+    "first_observation": "1963-06-17",
+    "last_observation": "1963-10-28",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1964,
+    "max_observed_depth_cm": 355.6,
+    "peak_observation_date": "1964-08-11",
+    "observations": 28,
+    "first_observation": "1964-05-25",
+    "last_observation": "1964-12-02",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1965,
+    "max_observed_depth_cm": 146.3,
+    "peak_observation_date": "1965-08-23",
+    "observations": 26,
+    "first_observation": "1965-05-18",
+    "last_observation": "1965-11-18",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1966,
+    "max_observed_depth_cm": 176.3,
+    "peak_observation_date": "1966-08-22",
+    "observations": 28,
+    "first_observation": "1966-05-23",
+    "last_observation": "1966-11-08",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1967,
+    "max_observed_depth_cm": 185.4,
+    "peak_observation_date": "1967-09-15",
+    "observations": 21,
+    "first_observation": "1967-06-02",
+    "last_observation": "1967-10-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1968,
+    "max_observed_depth_cm": 307.1,
+    "peak_observation_date": "1968-10-04",
+    "observations": 26,
+    "first_observation": "1968-05-17",
+    "last_observation": "1968-12-06",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1969,
+    "max_observed_depth_cm": 114.6,
+    "peak_observation_date": "1969-08-14",
+    "observations": 19,
+    "first_observation": "1969-06-05",
+    "last_observation": "1969-10-24",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1970,
+    "max_observed_depth_cm": 280.7,
+    "peak_observation_date": "1970-10-01",
+    "observations": 31,
+    "first_observation": "1970-05-01",
+    "last_observation": "1970-11-19",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1971,
+    "max_observed_depth_cm": 206.5,
+    "peak_observation_date": "1971-10-05",
+    "observations": 30,
+    "first_observation": "1971-04-29",
+    "last_observation": "1971-11-18",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1972,
+    "max_observed_depth_cm": 226.8,
+    "peak_observation_date": "1972-08-17",
+    "observations": 29,
+    "first_observation": "1972-04-20",
+    "last_observation": "1972-11-01",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1973,
+    "max_observed_depth_cm": 123.4,
+    "peak_observation_date": "1973-09-06",
+    "observations": 20,
+    "first_observation": "1973-05-31",
+    "last_observation": "1973-10-11",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1974,
+    "max_observed_depth_cm": 287.4,
+    "peak_observation_date": "1974-08-29",
+    "observations": 30,
+    "first_observation": "1974-05-23",
+    "last_observation": "1974-11-26",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1975,
+    "max_observed_depth_cm": 180.0,
+    "peak_observation_date": "1975-09-02",
+    "observations": 28,
+    "first_observation": "1975-05-22",
+    "last_observation": "1975-11-04",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1976,
+    "max_observed_depth_cm": 160.7,
+    "peak_observation_date": "1976-09-16",
+    "observations": 24,
+    "first_observation": "1976-06-03",
+    "last_observation": "1976-11-11",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1977,
+    "max_observed_depth_cm": 226.6,
+    "peak_observation_date": "1977-08-04",
+    "observations": 24,
+    "first_observation": "1977-05-19",
+    "last_observation": "1977-10-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1978,
+    "max_observed_depth_cm": 186.5,
+    "peak_observation_date": "1978-08-24",
+    "observations": 23,
+    "first_observation": "1978-06-08",
+    "last_observation": "1978-11-09",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1979,
+    "max_observed_depth_cm": 170.9,
+    "peak_observation_date": "1979-09-13",
+    "observations": 22,
+    "first_observation": "1979-06-28",
+    "last_observation": "1979-11-06",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1980,
+    "max_observed_depth_cm": 198.1,
+    "peak_observation_date": "1980-09-18",
+    "observations": 23,
+    "first_observation": "1980-05-16",
+    "last_observation": "1980-10-30",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1981,
+    "max_observed_depth_cm": 361.0,
+    "peak_observation_date": "1981-09-01",
+    "observations": 26,
+    "first_observation": "1981-05-28",
+    "last_observation": "1981-11-19",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1982,
+    "max_observed_depth_cm": 91.0,
+    "peak_observation_date": "1982-08-19",
+    "observations": 26,
+    "first_observation": "1982-04-22",
+    "last_observation": "1982-10-14",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1983,
+    "max_observed_depth_cm": 142.4,
+    "peak_observation_date": "1983-08-11",
+    "observations": 23,
+    "first_observation": "1983-05-27",
+    "last_observation": "1983-10-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1984,
+    "max_observed_depth_cm": 233.9,
+    "peak_observation_date": "1984-08-30",
+    "observations": 23,
+    "first_observation": "1984-06-14",
+    "last_observation": "1984-11-15",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1985,
+    "max_observed_depth_cm": 173.8,
+    "peak_observation_date": "1985-08-29",
+    "observations": 21,
+    "first_observation": "1985-05-31",
+    "last_observation": "1985-10-17",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1986,
+    "max_observed_depth_cm": 210.8,
+    "peak_observation_date": "1986-09-04",
+    "observations": 23,
+    "first_observation": "1986-06-17",
+    "last_observation": "1986-11-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1987,
+    "max_observed_depth_cm": 167.4,
+    "peak_observation_date": "1987-09-03",
+    "observations": 25,
+    "first_observation": "1987-05-21",
+    "last_observation": "1987-11-05",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1988,
+    "max_observed_depth_cm": 130.6,
+    "peak_observation_date": "1988-07-28",
+    "observations": 23,
+    "first_observation": "1988-06-06",
+    "last_observation": "1988-11-03",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1989,
+    "max_observed_depth_cm": 140.8,
+    "peak_observation_date": "1989-09-15",
+    "observations": 25,
+    "first_observation": "1989-05-24",
+    "last_observation": "1989-11-09",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1990,
+    "max_observed_depth_cm": 293.1,
+    "peak_observation_date": "1990-08-23",
+    "observations": 28,
+    "first_observation": "1990-04-19",
+    "last_observation": "1990-11-15",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1991,
+    "max_observed_depth_cm": 284.7,
+    "peak_observation_date": "1991-09-26",
+    "observations": 25,
+    "first_observation": "1991-06-06",
+    "last_observation": "1991-11-21",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1992,
+    "max_observed_depth_cm": 316.0,
+    "peak_observation_date": "1992-09-17",
+    "observations": 29,
+    "first_observation": "1992-05-25",
+    "last_observation": "1992-12-03",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1993,
+    "max_observed_depth_cm": 110.8,
+    "peak_observation_date": "1993-08-19",
+    "observations": 24,
+    "first_observation": "1993-06-10",
+    "last_observation": "1993-11-11",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1994,
+    "max_observed_depth_cm": 168.2,
+    "peak_observation_date": "1994-09-29",
+    "observations": 29,
+    "first_observation": "1994-05-18",
+    "last_observation": "1994-11-24",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1995,
+    "max_observed_depth_cm": 215.2,
+    "peak_observation_date": "1995-08-03",
+    "observations": 24,
+    "first_observation": "1995-05-25",
+    "last_observation": "1995-10-26",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1996,
+    "max_observed_depth_cm": 254.2,
+    "peak_observation_date": "1996-10-03",
+    "observations": 33,
+    "first_observation": "1996-04-16",
+    "last_observation": "1996-11-18",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1997,
+    "max_observed_depth_cm": 150.2,
+    "peak_observation_date": "1997-08-28",
+    "observations": 24,
+    "first_observation": "1997-05-30",
+    "last_observation": "1997-10-30",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1998,
+    "max_observed_depth_cm": 138.2,
+    "peak_observation_date": "1998-08-20",
+    "observations": 19,
+    "first_observation": "1998-06-11",
+    "last_observation": "1998-10-15",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 1999,
+    "max_observed_depth_cm": 154.9,
+    "peak_observation_date": "1999-08-12",
+    "observations": 19,
+    "first_observation": "1999-06-04",
+    "last_observation": "1999-10-07",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2000,
+    "max_observed_depth_cm": 262.0,
+    "peak_observation_date": "2000-09-07",
+    "observations": 28,
+    "first_observation": "2000-05-25",
+    "last_observation": "2000-11-09",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2001,
+    "max_observed_depth_cm": 195.9,
+    "peak_observation_date": "2001-08-23",
+    "observations": 27,
+    "first_observation": "2001-05-25",
+    "last_observation": "2001-11-02",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2002,
+    "max_observed_depth_cm": 175.6,
+    "peak_observation_date": "2002-08-15",
+    "observations": 25,
+    "first_observation": "2002-05-16",
+    "last_observation": "2002-10-31",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2003,
+    "max_observed_depth_cm": 201.2,
+    "peak_observation_date": "2003-09-18",
+    "observations": 32,
+    "first_observation": "2003-05-29",
+    "last_observation": "2003-11-13",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2004,
+    "max_observed_depth_cm": 228.2,
+    "peak_observation_date": "2004-08-19",
+    "observations": 28,
+    "first_observation": "2004-06-10",
+    "last_observation": "2004-11-11",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2005,
+    "max_observed_depth_cm": 150.2,
+    "peak_observation_date": "2005-08-18",
+    "observations": 21,
+    "first_observation": "2005-06-06",
+    "last_observation": "2005-10-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2006,
+    "max_observed_depth_cm": 85.1,
+    "peak_observation_date": "2006-08-31",
+    "observations": 23,
+    "first_observation": "2006-05-04",
+    "last_observation": "2006-10-05",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2007,
+    "max_observed_depth_cm": 164.4,
+    "peak_observation_date": "2007-08-09",
+    "observations": 25,
+    "first_observation": "2007-05-17",
+    "last_observation": "2007-10-25",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2008,
+    "max_observed_depth_cm": 174.2,
+    "peak_observation_date": "2008-08-14",
+    "observations": 22,
+    "first_observation": "2008-04-24",
+    "last_observation": "2008-10-16",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2009,
+    "max_observed_depth_cm": 148.0,
+    "peak_observation_date": "2009-09-10",
+    "observations": 30,
+    "first_observation": "2009-04-23",
+    "last_observation": "2009-11-05",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2010,
+    "max_observed_depth_cm": 192.5,
+    "peak_observation_date": "2010-08-26",
+    "observations": 22,
+    "first_observation": "2010-06-03",
+    "last_observation": "2010-10-28",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2011,
+    "max_observed_depth_cm": 164.6,
+    "peak_observation_date": "2011-07-28",
+    "observations": 26,
+    "first_observation": "2011-05-05",
+    "last_observation": "2011-10-27",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2012,
+    "max_observed_depth_cm": 215.5,
+    "peak_observation_date": "2012-09-10",
+    "observations": 27,
+    "first_observation": "2012-05-24",
+    "last_observation": "2012-11-01",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2013,
+    "max_observed_depth_cm": 185.9,
+    "peak_observation_date": "2013-08-26",
+    "observations": 27,
+    "first_observation": "2013-05-09",
+    "last_observation": "2013-10-31",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2014,
+    "max_observed_depth_cm": 168.5,
+    "peak_observation_date": "2014-07-24",
+    "observations": 21,
+    "first_observation": "2014-06-01",
+    "last_observation": "2014-10-23",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2015,
+    "max_observed_depth_cm": 148.8,
+    "peak_observation_date": "2015-09-09",
+    "observations": 27,
+    "first_observation": "2015-05-01",
+    "last_observation": "2015-10-22",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2016,
+    "max_observed_depth_cm": 157.5,
+    "peak_observation_date": "2016-08-25",
+    "observations": 20,
+    "first_observation": "2016-05-02",
+    "last_observation": "2016-09-19",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2017,
+    "max_observed_depth_cm": 240.9,
+    "peak_observation_date": "2017-09-20",
+    "observations": 24,
+    "first_observation": "2017-05-01",
+    "last_observation": "2017-11-03",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2018,
+    "max_observed_depth_cm": 224.6,
+    "peak_observation_date": "2018-08-22",
+    "observations": 25,
+    "first_observation": "2018-05-07",
+    "last_observation": "2018-10-31",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2019,
+    "max_observed_depth_cm": 228.8,
+    "peak_observation_date": "2019-08-29",
+    "observations": 24,
+    "first_observation": "2019-05-25",
+    "last_observation": "2019-11-01",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2020,
+    "max_observed_depth_cm": 167.8,
+    "peak_observation_date": "2020-08-27",
+    "observations": 22,
+    "first_observation": "2020-05-20",
+    "last_observation": "2020-10-19",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2021,
+    "max_observed_depth_cm": 183.6,
+    "peak_observation_date": "2021-07-29",
+    "observations": 22,
+    "first_observation": "2021-01-01",
+    "last_observation": "2021-12-06",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2022,
+    "max_observed_depth_cm": 232.0,
+    "peak_observation_date": "2022-09-20",
+    "observations": 15,
+    "first_observation": "2022-05-27",
+    "last_observation": "2022-11-10",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2023,
+    "max_observed_depth_cm": 131.0,
+    "peak_observation_date": "2023-07-13",
+    "observations": 15,
+    "first_observation": "2023-06-04",
+    "last_observation": "2023-10-10",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2024,
+    "max_observed_depth_cm": 124.6,
+    "peak_observation_date": "2024-07-30",
+    "observations": 17,
+    "first_observation": "2024-04-29",
+    "last_observation": "2024-10-09",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2025,
+    "max_observed_depth_cm": 220.4,
+    "peak_observation_date": "2025-09-01",
+    "observations": 21,
+    "first_observation": "2025-04-28",
+    "last_observation": "2025-11-21",
+    "current_year": false
+  },
+  {
+    "site": "Spencers Creek",
+    "year": 2026,
+    "max_observed_depth_cm": 94.5,
+    "peak_observation_date": "2026-08-13",
+    "observations": 18,
+    "first_observation": "2026-01-01",
+    "last_observation": "2026-09-24",
+    "current_year": true
+  }
+]

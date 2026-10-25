@@ -1,0 +1,427 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 760,
+  "height": 360,
+  "background": "#faf9f4",
+  "title": {
+    "text": "How has peak snow depth changed?",
+    "subtitle": [
+      "Spencers Creek, 1954\u20132026 | Highest recorded depth each year",
+      "Dashed line: linear trend through 2025. Final point: incomplete 2026 record."
+    ],
+    "anchor": "start",
+    "fontSize": 22,
+    "subtitleFontSize": 12,
+    "offset": 18
+  },
+  "data": {
+    "url": "spencers-creek-annual.json"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "domain": [
+          1954,
+          2026
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": "d",
+        "values": [
+          1955,
+          1960,
+          1965,
+          1970,
+          1975,
+          1980,
+          1985,
+          1990,
+          1995,
+          2000,
+          2005,
+          2010,
+          2015,
+          2020,
+          2025
+        ],
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 0)",
+          "as": "bottom"
+        },
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 100)",
+          "as": "top"
+        },
+        {
+          "calculate": "\"0\\u2013100 cm\"",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "y": {
+          "field": "top",
+          "type": "quantitative",
+          "title": "Maximum observed snow depth (cm)",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          }
+        },
+        "y2": {
+          "field": "bottom"
+        },
+        "color": {
+          "field": "band",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "0\u2013100 cm",
+              "100\u2013200 cm",
+              "200\u2013300 cm",
+              "300+ cm"
+            ],
+            "range": [
+              "#193e70",
+              "#327bb4",
+              "#76a4d1",
+              "#c1d5eb"
+            ]
+          },
+          "legend": {
+            "title": "Depth bands",
+            "orient": "top",
+            "columns": 4
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 100)",
+          "as": "bottom"
+        },
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 200)",
+          "as": "top"
+        },
+        {
+          "calculate": "\"100\\u2013200 cm\"",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "y": {
+          "field": "top",
+          "type": "quantitative",
+          "title": "Maximum observed snow depth (cm)",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          }
+        },
+        "y2": {
+          "field": "bottom"
+        },
+        "color": {
+          "field": "band",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "0\u2013100 cm",
+              "100\u2013200 cm",
+              "200\u2013300 cm",
+              "300+ cm"
+            ],
+            "range": [
+              "#193e70",
+              "#327bb4",
+              "#76a4d1",
+              "#c1d5eb"
+            ]
+          },
+          "legend": {
+            "title": "Depth bands",
+            "orient": "top",
+            "columns": 4
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 200)",
+          "as": "bottom"
+        },
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 300)",
+          "as": "top"
+        },
+        {
+          "calculate": "\"200\\u2013300 cm\"",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "y": {
+          "field": "top",
+          "type": "quantitative",
+          "title": "Maximum observed snow depth (cm)",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          }
+        },
+        "y2": {
+          "field": "bottom"
+        },
+        "color": {
+          "field": "band",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "0\u2013100 cm",
+              "100\u2013200 cm",
+              "200\u2013300 cm",
+              "300+ cm"
+            ],
+            "range": [
+              "#193e70",
+              "#327bb4",
+              "#76a4d1",
+              "#c1d5eb"
+            ]
+          },
+          "legend": {
+            "title": "Depth bands",
+            "orient": "top",
+            "columns": 4
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 300)",
+          "as": "bottom"
+        },
+        {
+          "calculate": "min(datum.max_observed_depth_cm, 400)",
+          "as": "top"
+        },
+        {
+          "calculate": "\"300+ cm\"",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "y": {
+          "field": "top",
+          "type": "quantitative",
+          "title": "Maximum observed snow depth (cm)",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          }
+        },
+        "y2": {
+          "field": "bottom"
+        },
+        "color": {
+          "field": "band",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "0\u2013100 cm",
+              "100\u2013200 cm",
+              "200\u2013300 cm",
+              "300+ cm"
+            ],
+            "range": [
+              "#193e70",
+              "#327bb4",
+              "#76a4d1",
+              "#c1d5eb"
+            ]
+          },
+          "legend": {
+            "title": "Depth bands",
+            "orient": "top",
+            "columns": 4
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year < 2026"
+        },
+        {
+          "regression": "max_observed_depth_cm",
+          "on": "year"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#d34f4f",
+        "strokeDash": [
+          7,
+          5
+        ],
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "max_observed_depth_cm",
+          "type": "quantitative"
+        },
+        "tooltip": {
+          "value": "Linear trend fitted to annual observed maxima, 1954\u20132025"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 35,
+        "opacity": 0
+      },
+      "encoding": {
+        "y": {
+          "field": "max_observed_depth_cm",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "max_observed_depth_cm",
+            "title": "Highest recorded depth (cm)",
+            "type": "quantitative",
+            "format": ".1f"
+          },
+          {
+            "field": "peak_observation_date",
+            "title": "Recorded peak date"
+          },
+          {
+            "field": "observations",
+            "title": "Readings in year",
+            "type": "quantitative"
+          },
+          {
+            "field": "current_year",
+            "title": "Incomplete year"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2026"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#193e70",
+        "size": 60
+      },
+      "encoding": {
+        "y": {
+          "field": "max_observed_depth_cm",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "max_observed_depth_cm",
+            "title": "Observed maximum (cm)"
+          },
+          {
+            "field": "last_observation",
+            "title": "Last available reading"
+          }
+        ]
+      }
+    }
+  ],
+  "usermeta": {
+    "source": "https://www.snowyhydro.com.au/generation/live-data/snow-depths/",
+    "comments": {
+      "data": "Spencers Creek only. Annual highest observation, with reading count and date retained. No missing days filled.",
+      "bands": "Each coloured area is clipped to a fixed 100 cm depth interval. These are height bands, not independent categories or a ridgeline.",
+      "line": "Ordinary least-squares trend across annual maxima, excluding incomplete 2026. Descriptive trend, not a causal or significance test.",
+      "shape": "Straight connections preserve recorded annual values rather than inventing smoothed annual peaks.",
+      "scope": "One alpine monitoring site; not a national snow estimate and not snowfall totals."
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#e0e5e8",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titlePadding": 12
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleLimit": 300
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "color": "#233a35"
+    }
+  }
+}
