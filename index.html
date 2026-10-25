@@ -54,6 +54,15 @@
       <p class="notes">Source: Bureau of Meteorology, <a href="https://www.bom.gov.au/climate/data/">Climate Data Online</a>, supplied station downloads. These are station observations, not city-wide averages. Melbourne is represented by Flemington Racecourse. Station names appear in tooltips.</p>
     </section>
 
+    <section aria-labelledby="rainfall-box-heading">
+      <h2 id="rainfall-box-heading">Are wet and dry years becoming more variable?</h2>
+      <p>Compare annual rainfall in 1970–1997 and 1998–2025. The line inside each box marks the median year; the box contains the middle half of annual totals. A taller box means a larger spread between those years.</p>
+      <div id="rainfall-boxplot" class="chart"></div>
+      <p id="rainfall-box-status" class="status" role="status">Loading rainfall distributions...</p>
+      <p class="notes">Dots show individual years. Whiskers reach the most extreme observations within 1.5 times the box height beyond its edges. Only complete 12-month years are included. Selectable cities have at least 15 complete years in each period; sample counts appear above the boxes. Pending quality-control months are identified in tooltips. Missing years may affect comparisons; this is not a statistical significance test.</p>
+      <p class="notes">Source: <a href="https://www.bom.gov.au/climate/data/">Bureau of Meteorology Climate Data Online</a>, supplied station records. Values represent individual stations, not city-wide averages.</p>
+    </section>
+
     <section aria-labelledby="temperature-heading">
       <h2 id="temperature-heading">How has Australia's temperature changed?</h2>
       <p>Each bar shows the difference between Australia's annual mean temperature and the 1961–1990 average. Red means warmer, blue means cooler. These are temperature differences, not absolute temperatures.</p>
@@ -77,6 +86,15 @@
       <p id="snow-status" class="status" role="status">Loading snow depths...</p>
       <p class="notes">Blue bands mark 100 cm depth intervals. Hover for the recorded maximum, its date and the number of readings that year. Measurements are irregular, so the true seasonal peak may be missed. The incomplete 2026 record is excluded from the trend.</p>
       <p class="notes">This is snow depth on the ground at one alpine location, not snowfall totals or an Australian average. Source: <a href="https://www.snowyhydro.com.au/generation/live-data/snow-depths/">Snowy Hydro snow-depth records</a>, retrieved 25 October 2026.</p>
+    </section>
+
+    <section aria-labelledby="snow-ridge-heading">
+      <h2 id="snow-ridge-heading">How do snow seasons compare?</h2>
+      <p>Each ridge follows the recorded snow depth at Spencers Creek through one year. Read from older years at the top to recent years below. Higher peaks indicate deeper snow; all years use the same depth scale.</p>
+      <div id="snow-ridgeline" class="chart"></div>
+      <p id="snow-ridge-status" class="status" role="status">Loading snow seasons...</p>
+      <p class="notes">Shows 1954–2025; incomplete 2026 is omitted. Lines connect irregular observations without filling missing dates with zero. Ridge widths do not establish exact season lengths. Blue shading distinguishes years, not depth. Spencers Creek is one alpine location, not an Australian snowfall average.</p>
+      <p class="notes">Source: <a href="https://www.snowyhydro.com.au/generation/live-data/snow-depths/">Snowy Hydro snow-depth records</a>, retrieved 25 October 2026.</p>
     </section>
 
     <section aria-labelledby="future-temperature-heading">
@@ -111,18 +129,21 @@
         // The dumbbell chart needs extra space for its city labels on the left.
         const sideSpace = elementId === 'city-temperature' ? 250 : 95;
         const chartWidth = () => Math.max(160, Math.min(760, element.clientWidth - sideSpace));
-        spec.width = chartWidth();
+        const isFaceted = Boolean(spec.facet && spec.spec);
+        if (isFaceted) spec.spec.width = chartWidth();
+        else spec.width = chartWidth();
         const isMap = ['rainfall-map', 'seasonal-map', 'future-fire'].includes(elementId);
         if (isMap) spec.height = Math.round(spec.width * 0.8);
         const result = await vegaEmbed(element, spec, { renderer: 'canvas', actions: false });
         status.textContent = '';
         // Resize the existing view instead of downloading its data again.
-        let previousWidth = spec.width;
+        let previousWidth = chartWidth();
         new ResizeObserver(() => {
           const width = chartWidth();
           if (width === previousWidth) return;
           previousWidth = width;
-          result.view.width(width);
+          if (isFaceted) result.view.signal('child_width', width);
+          else result.view.width(width);
           if (isMap) result.view.height(Math.round(width * 0.8));
           result.view.resize().runAsync().catch(console.error);
         }).observe(element);
@@ -135,6 +156,8 @@
     loadChart('rainfall-map', 'rainfall-map.vl.json', 'status');
     loadChart('seasonal-map', 'seasonal-rainfall.vl.json', 'seasonal-status');
     loadChart('monthly-rainfall', 'monthly-heatmap.vl.json', 'monthly-status');
+    loadChart('rainfall-boxplot', 'rainfall-boxplot.vl.json', 'rainfall-box-status');
+    loadChart('snow-ridgeline', 'snow-ridgeline.vl.json', 'snow-ridge-status');
     loadChart('temperature-chart', 'temperature-anomaly.vl.json', 'temperature-status');
     loadChart('city-temperature', 'temperature-dumbbell.vl.json', 'city-temperature-status');
     loadChart('snow-peak', 'snow-peak.vl.json', 'snow-status');
