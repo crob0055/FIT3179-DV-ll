@@ -1,0 +1,2632 @@
+[
+  {
+    "city": "Adelaide",
+    "year": 1970,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 492.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1971,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 703.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1972,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 456.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1973,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 695.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1974,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 638.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1975,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 525.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1976,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 371.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1977,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 378.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1978,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 549.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1979,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 589.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1980,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 498.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1981,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 648.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1982,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 338.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1983,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 669.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1984,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 496.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1985,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 535.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1986,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 563.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1987,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 507.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1988,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 483.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1989,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 451.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1990,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 459.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1991,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 463.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1992,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 832.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1993,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 484.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1994,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 312.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1995,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 429.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1996,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 550.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1997,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 480.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Adelaide",
+    "year": 1998,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 496.5,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 1999,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 533.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2000,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 548.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2001,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 598.1,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2002,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 348.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2003,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 523.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2005,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 573.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2006,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 270.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2008,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 363.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2009,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 485.7,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2010,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 541.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2011,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 461.6,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2012,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 486.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2013,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 458.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2014,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 484.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2015,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 338.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2016,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 737.0,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2017,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 499.1,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2018,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 379.3,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2020,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 425.4,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2021,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 439.1,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Adelaide",
+    "year": 2025,
+    "station": "NORTH ADELAIDE",
+    "station_id": "023011",
+    "annual_mm": 367.2,
+    "pending_months": 9,
+    "period": "1998\u20132025",
+    "sample_years": 22
+  },
+  {
+    "city": "Darwin",
+    "year": 1970,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1224.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1971,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1972.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1972,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1491.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1973,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1666.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1974,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2643.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1975,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1909.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1976,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1562.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1977,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2385.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1978,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1734.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1979,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1197.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1980,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1844.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1981,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2164.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1982,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1494.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1983,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1886.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1984,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1948.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1985,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1233.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1986,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1737.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1987,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1977.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1988,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1853.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1989,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1480.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1990,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1343.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1991,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1975.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1992,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1407.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1993,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1569.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1994,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1580.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1995,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2455.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1996,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1803.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1997,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2282.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1998,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2776.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 1999,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1892.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2000,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2140.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2001,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1443.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2002,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1214.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2003,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1968.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2004,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1778.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2005,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1360.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2006,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1803.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2007,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1808.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2008,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1962.7,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2009,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1742.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2010,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2257.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2011,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2686.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2012,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1723.7,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2013,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1759.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2014,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1547.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2015,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1743.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2016,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1355.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2017,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2197.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2018,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1914.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2019,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1074.0,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2020,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1749.8,
+    "pending_months": 8,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2021,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1779.8,
+    "pending_months": 6,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2022,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1972.2,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2023,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1365.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2024,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 1982.4,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Darwin",
+    "year": 2025,
+    "station": "DARWIN AIRPORT",
+    "station_id": "014015",
+    "annual_mm": 2305.4,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1970,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 783.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1971,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 754.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1972,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 452.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1973,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 604.7,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1974,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 700.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1975,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 827.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1976,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 664.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1977,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 495.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1978,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 608.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1979,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 390.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1980,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 464.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1981,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 548.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1982,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 398.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1983,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 597.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1984,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 595.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1985,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 715.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1986,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 652.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1987,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 493.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1988,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 643.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1989,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 492.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1990,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 569.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1991,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 570.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1992,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 535.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1993,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 648.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1994,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 455.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1995,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 642.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1996,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 749.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1997,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 527.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Hobart",
+    "year": 1998,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 590.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 1999,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 450.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2000,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 454.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2001,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 681.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2002,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 465.4,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2003,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 642.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2004,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 579.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2005,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 670.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2006,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 346.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2007,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 549.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2008,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 407.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2009,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 865.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2010,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 524.0,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2011,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 690.6,
+    "pending_months": 11,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2012,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 476.6,
+    "pending_months": 12,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2013,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 609.8,
+    "pending_months": 11,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2014,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 484.2,
+    "pending_months": 11,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2015,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 528.4,
+    "pending_months": 11,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2016,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 693.6,
+    "pending_months": 9,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2017,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 493.2,
+    "pending_months": 11,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2018,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 585.2,
+    "pending_months": 12,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2019,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 385.0,
+    "pending_months": 10,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2020,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 656.2,
+    "pending_months": 12,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2022,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 700.0,
+    "pending_months": 12,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2023,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 422.8,
+    "pending_months": 10,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2024,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 603.8,
+    "pending_months": 5,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Hobart",
+    "year": 2025,
+    "station": "HOBART (ELLERSLIE ROAD)",
+    "station_id": "094029",
+    "annual_mm": 486.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 27
+  },
+  {
+    "city": "Melbourne",
+    "year": 1970,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 770.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1971,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 768.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1972,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 506.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1973,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 785.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1974,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 793.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1975,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 713.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1976,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 485.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1977,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 632.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1978,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 862.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1979,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 517.3,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1980,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 550.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1981,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 569.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1982,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 439.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1983,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 620.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1984,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 577.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1985,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 703.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1986,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 497.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1987,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 671.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1988,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 638.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1989,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 736.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1990,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 618.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1991,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 674.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1992,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 871.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1993,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 773.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1994,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 484.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1995,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 778.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1996,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 668.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1997,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 308.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Melbourne",
+    "year": 1998,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 537.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 1999,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 551.9,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2003,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 496.6,
+    "pending_months": 2,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2004,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 593.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2005,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 630.0,
+    "pending_months": 2,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2008,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 417.6,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2009,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 405.0,
+    "pending_months": 2,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2010,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 747.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2011,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 789.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2012,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 549.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2013,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 587.1,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2014,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 411.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2016,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 599.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2017,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 586.9,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2020,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 776.6,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2021,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 671.2,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2022,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 725.6,
+    "pending_months": 2,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Melbourne",
+    "year": 2023,
+    "station": "FLEMINGTON RACECOURSE",
+    "station_id": "086039",
+    "annual_mm": 543.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 18
+  },
+  {
+    "city": "Perth",
+    "year": 1970,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 847.5,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1971,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 776.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1972,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 576.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1973,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 914.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1974,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 875.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1975,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 692.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1976,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 722.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1977,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 615.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1978,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 822.9,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1979,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 569.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1980,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 700.1,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1981,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 791.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1982,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 664.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1983,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 720.6,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1984,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 748.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1985,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 620.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1986,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 901.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1987,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 743.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1988,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 914.4,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1989,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 674.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1990,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 704.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1991,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 903.8,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1992,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 960.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1993,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 666.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1994,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 609.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1995,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 793.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1996,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 889.2,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1997,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 653.0,
+    "pending_months": 0,
+    "period": "1970\u20131997",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1998,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 684.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 1999,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 793.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2000,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 707.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2001,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 623.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2002,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 648.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2003,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 810.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2004,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 609.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2005,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 820.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2006,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 479.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2007,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 692.6,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2008,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 828.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2009,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 615.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2010,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 483.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2011,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 835.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2012,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 649.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2013,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 704.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2014,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 620.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2015,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 578.2,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2016,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 674.4,
+    "pending_months": 1,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2017,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 729.4,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2018,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 743.8,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2019,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 532.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2020,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 636.2,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2021,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 799.0,
+    "pending_months": 6,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2022,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 668.6,
+    "pending_months": 2,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2023,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 554.0,
+    "pending_months": 0,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2024,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 619.4,
+    "pending_months": 3,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  },
+  {
+    "city": "Perth",
+    "year": 2025,
+    "station": "PERTH AIRPORT M.O.",
+    "station_id": "009021",
+    "annual_mm": 804.2,
+    "pending_months": 8,
+    "period": "1998\u20132025",
+    "sample_years": 28
+  }
+]
